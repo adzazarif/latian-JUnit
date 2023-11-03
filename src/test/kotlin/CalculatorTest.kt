@@ -1,12 +1,12 @@
-import org.junit.jupiter.api.Assertions.*
-import kotlin.test.Test;
-class CalculatorTest{
-    private val calculator: Calculator = Calculator()
+import org.junit.jupiter.api.Assertions.* //import fungsi assertEquals
+import kotlin.test.Test;//import function tes
+class CalculatorTest{//decalration class CalcutatorTest
+    private val calculator: Calculator = Calculator()//testSample variable declaration and initialized with the no-argument constructor of the Sample class
 
     @Test
-    fun testTambah(){
-        val excepted = 10;
-        assertEquals(excepted, calculator.tambah(5,5))
+    fun testTambah(){//declaration fungsi testTambah
+        val excepted = 10;//declaration variable excepted with value 10
+        assertEquals(excepted, calculator.tambah(5,5))// The test uses the assertEquals function which compares the expected variable value with the result of calling calculator.sum(5,5).
     }
 
     @Test
